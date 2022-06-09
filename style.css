@@ -1,0 +1,78 @@
+:root{
+    box-sizing: border-box;
+}
+*,
+::after,
+::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+.heading{
+    text-align: center;
+    margin: 1rem;
+}
+.user-list-section ul{
+    list-style: none;
+}
+
+/* SEARCH SECTION STYLING */
+.search-section{
+    background-color: #645D79;
+    padding: 0.8rem;
+}
+.search-section input{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+}
+.search-section input:focus{
+    outline: none;
+}
+
+/* USER LIST SECTION STYLING */
+.user-list-section{
+    margin: 1rem 0;
+}
+.user-list-section li{
+    background-color: #f6f6f6;
+    border: 1px solid #9d98ae;
+    margin-top: -1px;
+    text-transform: capitalize;
+    padding: 0.8rem;
+    line-height: 1.5;
+}
+.user-list-section li:hover{
+    background-color: #eee;
+}
+.username {
+    background-color: #645D79;
+    border-radius: 0.3rem;
+    color: #fff;
+    padding: 0.3rem 0.4rem;
+
+}
+.user-info{
+    margin-left: 2rem;
+}
+
+
+/* Media Query for larger screen */
+
+@media (min-width: 1000px){
+    body{
+        width: 50%
+    }
+    .user-info{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0;
+        margin-top: 0.8rem;
+    }
+} 
